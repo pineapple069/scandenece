@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Generator</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://raw.github.com/jeromeetienne/jquery-qrcode/master/jquery.qrcode.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    jQuery(function($){
+      $("#button").on('click', function(){
+        var canvas = $('#qrcode');
+        canvas.html('');
+        var wh = $("input[name=size]:radio:checked").val().split("x");
+        var w = wh[0]; var h = wh[1];
+        canvas.qrcode({width: w, height: h, text: $("#textarea").val()});
+      });
+    });
+  </script>
+  <style type="text/css">
+  #qrcode{
+    margin-top: 20px;
+  }
+  </style>
+</head>
+<body>
+<textarea id="textarea" cols="30" rows="5"></textarea>
+<br>
+<label for="64"><input id="64" type="radio" name="size" value="64x64">64x64</label>
+<label for="128"><input id="128" type="radio" name="size" value="128x128" checked>128x128</label>
+<label for="256"><input id="256" type="radio" name="size" value="256x256">256x256</label>
+<br>
+<input type="button" id="button" value="作成" style="width: 280px;">
+<div id="qrcode"></div>
+</body>
+</html>

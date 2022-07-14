@@ -1,0 +1,106 @@
+:root{
+    --main-bg-color: rgb(51, 173, 217);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.logoo{
+    height: 12vh;
+    width: 120vh;
+    padding: 0 26px;
+}
+.search{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+header{
+    
+    background-color: var(--main-bg-color);
+}
+nav{
+    display: flex;
+}
+nav ul{
+    height: 12vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+    justify-content: center;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    background-image: url('img/bmsit_rsz-1170x560.jpeg'),linear-gradient(rgba(21, 126, 201, 0.75),rgba(14, 140, 212, 0.75));
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    height: 76vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: repeat;
+}
+.faculty{
+    background-color: var(--main-bg-color);
+    height: 15vh;
+    width: 12vh;
+    position: absolute;
+    top: 50%;
+    transform: matrix(-50%);
+    text-align: center ;
+}
+.flogo{
+    height: 50px;
+    width: 50px;
+}
+.student{
+    background-color: var(--main-bg-color);
+    height: 12vh;
+    width: 12vh;
+    position: absolute;
+    top: 50%;
+    text-align: center ;
+    color: white;
+}
+.slogo{
+    height: 50px;
+    width: 50px;
+}
+.hellow{
+    margin-right: 30%;
+    margin-left: 30%;
+    background-color: var(--main-bg-color);
+
+    width: 12vh;
+}
+.slider{
+    background-size: contain;
+    margin: auto;
+
+}
+footer{
+    height: 12vh;
+    background-color:var(--main-bg-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h3{
+    border: 5px;
+    height: 12vh;
+    width: 12vh;
+    text-align: center;
+
+}
